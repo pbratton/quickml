@@ -14,7 +14,7 @@ public abstract class Branch<VC extends ValueCounter<VC>> implements Node<VC>, S
 	private static final long serialVersionUID = 8290012786245422175L;
 	public final String attribute;
 	private Node<VC> trueChild, falseChild;
-    public VC valueCounter;
+    private VC valueCounter;
     protected Node<VC> parent;
 	protected final double probabilityOfTrueChild;
 	public final double score;
